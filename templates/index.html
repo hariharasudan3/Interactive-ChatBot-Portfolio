@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Hara Sudan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='jp.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO MY  Interactive PORTFOLIO </h1>
+    </header>
+    <div class="container">
+        <section class="left">
+            <h1 style="color: red; text-align: center;"><b>Hari Hara Sudan</b></h1>
+            <img src="{{ url_for('static', filename='hari.jpg') }}">
+            <h2 style="color: white;">About Me</h2>
+            <p><b>
+                I'm Hari Hara Sudan, passionate about AI and ML, driven to innovate solutions for seamless user experiences through cutting-edge technology. .</b></p>
+        </section>
+        <section class="right">
+            <h2 style="color: white;">Experience</h2>
+            <ul>
+                    <li>3D Printing</li>
+                    <li>Virtual Internship in Data Science</li>
+            </ul>
+            <h2 style="color: white;">Skills</h2>
+            <ul>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                </ul>
+            </ul>
+            <h2 style="color: white;">Contact</h2>
+                <table>
+                    <tr>
+                        <td><b>Email </b></td>
+                        <td> : </td>
+                        <td>asharihaarasudan2003@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><b>Phone</b></td>
+                        <td> : </td>
+                        <td>80722XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td><b>LinkedIn</b></td>
+                        <td> : </td>
+                        <td><a href="https://www.linkedin.com/in/hari-hara-sudan-a-s"></a>Hari Hara Sudan</td>
+                    </tr>
+                    <tr>
+                        <td><b>GitHub</b></td>
+                        <td> : </td>
+                        <td><a href="https://github.com/hariharasudan3">Hari Hara Sudan</a></td>
+                    </tr>
+                </table>
+        </section>
+    </div>
+    <div id="chat-icon" class="floating-icon">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    <div id="message-box" class="floating-message">
+        <i class="fas fa-robot"></i><p>Hi chatbot here!!</p>
+    </div>
+    <div id="chat-dialog" class="hidden">
+        <div id="chat-header">
+            <span><b>Chatbot</b></span>
+            <i id="close-icon" class="fas fa-times"></i>
+        </div>
+        <div id="chat-messages"></div>
+        <input type="text" id="user-input" placeholder="Type your question...">
+        <button id="send-button">Send</button>
+    </div>
+    <script src="static/chatbot.js"></script>
+    <footer>
+        <p style="color: white;"><b>&copy; Hari Hara Sudan /b></p>
+    </footer>
+</body>
+</html>
